@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating WhatsApp Button</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        background-color: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; /* Remove underline */
+    }
+
+    .whatsapp-button:hover {
+        background-color: #128c7e;
+    }
+
+    .whatsapp-icon {
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+
+<a href="https://api.whatsapp.com/send?phone=263782780780" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
+
+<script>
+    // Add your WhatsApp phone number to the link above in the href attribute
+    // Example: https://api.whatsapp.com/send?phone=15551234567
+</script>
+
+</body>
+</html>
