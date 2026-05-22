@@ -741,21 +741,7 @@
     <div class="holder" style="display: none;">
       <div class="container">
         <div class="title-with-right">
-          <h2 class="h1-style">Our Turkey Fashion</h2>
-          <div class="prd-carousel-tabs js-filters-prd d-none d-md-flex" data-grid="tabCarousel-01">
-            <span class="active" data-filter="prd">All</span>
-            <span data-filter="prd-bodycare">LADIES</span>
-            <span data-filter="prd-underwear">LADIES</span>
-            <span data-filter="prd-baby">MEN</span>
-            <span data-filter="prd-bedding">MEN</span>
-          </div>
-          <div class="prd-carousel-tabs js-filters-prd-sm d-md-none">
-            <span class="filters-label active" data-filter=".prd">All</span>
-            <span class="filters-label" data-filter=".prd-bodycare">Body Care</span>
-            <span class="filters-label" data-filter=".prd-underwear">Underwear</span>
-            <span class="filters-label" data-filter=".prd-baby">Baby</span>
-            <span class="filters-label" data-filter=".prd-bedding">Bedding &amp; Linen</span>
-          </div>
+          <h2 class="h1-style">Featured Collection</h2>
         </div>
         <div
           class="prd-grid prd-carousel js-prd-carousel-tab slick-arrows-aside-simple slick-arrows-mobile-lg data-to-show-4 data-to-show-md-3 data-to-show-sm-3 data-to-show-xs-2 js-product-isotope-sm"
@@ -1552,6 +1538,12 @@
   <script src="js/vendor/form/validator.min.js"></script>
   <script src="js/vendor/slider/slider.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/sanity-integration.js"></script>
+  <script>
+    $(document).ready(function() {
+      loadHomePageProducts();
+    });
+  </script>
 </body>
 
 </html>
