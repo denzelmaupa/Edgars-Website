@@ -1,233 +1,222 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -- Google Analytica -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-Y1ZPWNNGCY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-Y1ZPWNNGCY");
-    </script>
-    <meta charset="utf-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"
-      name="viewport"
-    />
-    <meta
-      content="Edgars Stores Zimbabwe - your top fashion destination for men, women, and kids. Discover trendy, affordable styles at the best fashion store in Zimbabwe."
-      name="description"
-    />
-    <meta content="" name="author" />
-    <title>Edgars Stores Zimbabwe | Best Fashion Store in Zimbabwe</title>
-    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <!-- Vendor CSS -->
-    <link href="js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="js/vendor/slick/slick.min.css" rel="stylesheet" />
-    <link href="js/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
-    <link href="js/vendor/animate/animate.min.css" rel="stylesheet" />
-    <!-- Custom styles for this template -->
-    <link href="css/style-light.css" rel="stylesheet" />
-    <!--icon font-->
-    <link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
-    <!--custom font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      .whatsapp-button {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        z-index: 1000;
-        background-color: #25d366;
-        color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        /* Remove underline */
-        animation: floatButton 0.4s infinite alternate;
+<head>
+  <!-- Google tag (gtag.js) -- Google Analytica -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y1ZPWNNGCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-Y1ZPWNNGCY");
+  </script>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport" />
+  <meta
+    content="Edgars Stores Zimbabwe - your top fashion destination for men, women, and kids. Discover trendy, affordable styles at the best fashion store in Zimbabwe."
+    name="description" />
+  <meta content="" name="author" />
+  <title>Edgars Stores Zimbabwe | Best Fashion Store in Zimbabwe</title>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <!-- Vendor CSS -->
+  <link href="js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="js/vendor/slick/slick.min.css" rel="stylesheet" />
+  <link href="js/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+  <link href="js/vendor/animate/animate.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style-light.css" rel="stylesheet" />
+  <!--icon font-->
+  <link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+  <!--custom font-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      /* Remove underline */
+      animation: floatButton 0.4s infinite alternate;
+    }
+
+    @keyframes floatButton {
+      0% {
+        transform: translateY(0);
       }
 
-      @keyframes floatButton {
-        0% {
-          transform: translateY(0);
-        }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
 
-        100% {
-          transform: translateY(-10px);
-        }
+    .whatsapp-button:hover {
+      background-color: #128c7e;
+      animation: unset;
+    }
+
+    .whatsapp-icon {
+      font-size: 30px;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0 !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      overflow: hidden !important;
+      white-space: nowrap !important;
+    }
+
+    /* Elegant Edgars-style SEO intro */
+    .seo-intro {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      text-align: center;
+      /* font-family: "Helvetica Neue", Arial, sans-serif; */
+      color: #2b2b2b;
+      background: #fafafa;
+      /* soft background block */
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      /* subtle depth */
+    }
+
+    .seo-intro p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .seo-intro h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.5px;
+      color: #e60028;
+      /* Edgars red accent */
+      margin-bottom: 15px;
+    }
+
+    .seo-intro p:first-of-type {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #111;
+    }
+
+    .seo-intro::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #e60028;
+      /* slim brand line accent */
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+
+    .mobilemenu .mmenu,
+    .mobilemenu .submenu-list {
+      display: block !important;
+      opacity: 1 !important;
+      height: auto !important;
+      visibility: visible !important;
+    }
+
+    /* Mobile menu dropdown fixes */
+    @media (max-width: 991px) {
+
+      /* Hide by default */
+      .mmenu-submenu {
+        display: none;
+        padding-left: 15px;
+        border-left: 2px solid #eee;
+        margin-top: 5px;
       }
 
-      .whatsapp-button:hover {
-        background-color: #128c7e;
-        animation: unset;
-      }
-
-      .whatsapp-icon {
-        font-size: 30px;
-      }
-
-      .visually-hidden {
-        position: absolute !important;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden !important;
-        white-space: nowrap !important;
-      }
-
-      /* Elegant Edgars-style SEO intro */
-      .seo-intro {
-        max-width: 900px;
-        margin: 50px auto;
-        padding: 30px 20px;
-        text-align: center;
-        /* font-family: "Helvetica Neue", Arial, sans-serif; */
-        color: #2b2b2b;
-        background: #fafafa;
-        /* soft background block */
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-        /* subtle depth */
-      }
-
-      .seo-intro p {
-        font-size: 1.05rem;
-        line-height: 1.8;
-        color: #444;
-        margin-bottom: 20px;
-      }
-
-      .seo-intro h2 {
-        font-size: 1.4rem;
-        font-weight: 600;
-        text-transform: none;
-        letter-spacing: 0.5px;
-        color: #e60028;
-        /* Edgars red accent */
-        margin-bottom: 15px;
-      }
-
-      .seo-intro p:first-of-type {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: #111;
-      }
-
-      .seo-intro::before {
-        content: "";
+      /* When JS toggles .open on the parent link */
+      .js-accordion-mbmenu ul.nav li>a.open+.mmenu-submenu {
         display: block;
-        width: 60px;
-        height: 3px;
-        background: #e60028;
-        /* slim brand line accent */
-        margin: 0 auto 20px;
-        border-radius: 2px;
       }
 
-      .mobilemenu .mmenu,
-      .mobilemenu .submenu-list {
-        display: block !important;
-        opacity: 1 !important;
-        height: auto !important;
-        visibility: visible !important;
+      /* Submenu links styling */
+      .mmenu-submenu .submenu-list li a {
+        display: block;
+        padding: 10px 15px;
+        color: #333;
+        font-size: 0.95rem;
+        border-radius: 4px;
       }
 
-      /* Mobile menu dropdown fixes */
-      @media (max-width: 991px) {
-        /* Hide by default */
-        .mmenu-submenu {
-          display: none;
-          padding-left: 15px;
-          border-left: 2px solid #eee;
-          margin-top: 5px;
-        }
+      .mmenu-submenu .submenu-list li a:hover {
+        background: #f5f5f5;
+        color: #e60028;
+        /* Edgars red highlight */
+      }
+    }
 
-        /* When JS toggles .open on the parent link */
-        .js-accordion-mbmenu ul.nav li > a.open + .mmenu-submenu {
-          display: block;
-        }
+    /* Force visibility of submenu items to test */
+    .mmenu-submenu ul.nav li>a.open+.mmenu-submenu,
+    .mmenu-submenu ul.nav li:hover>.mmenu-submenu {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      position: relative !important;
+    }
 
-        /* Submenu links styling */
-        .mmenu-submenu .submenu-list li a {
-          display: block;
-          padding: 10px 15px;
-          color: #333;
-          font-size: 0.95rem;
-          border-radius: 4px;
-        }
-
-        .mmenu-submenu .submenu-list li a:hover {
-          background: #f5f5f5;
-          color: #e60028;
-          /* Edgars red highlight */
-        }
+    /* Mobile dropdowns inline */
+    @media (max-width: 991px) {
+      .mmenu-submenu {
+        display: none;
+        padding-left: 15px;
+        border-left: 2px solid #eee;
+        margin-top: 5px;
       }
 
-      /* Force visibility of submenu items to test */
-      .mmenu-submenu ul.nav li > a.open + .mmenu-submenu,
-      .mmenu-submenu ul.nav li:hover > .mmenu-submenu {
-        display: block !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: none !important;
-        position: relative !important;
+      /* When JS toggles 'open' class on the link */
+      .js-accordion-mbmenu ul.nav li>a.open+.mmenu-submenu {
+        display: block;
       }
 
-      /* Mobile dropdowns inline */
-      @media (max-width: 991px) {
-        .mmenu-submenu {
-          display: none;
-          padding-left: 15px;
-          border-left: 2px solid #eee;
-          margin-top: 5px;
-        }
-
-        /* When JS toggles 'open' class on the link */
-        .js-accordion-mbmenu ul.nav li > a.open + .mmenu-submenu {
-          display: block;
-        }
-
-        .mmenu-submenu li a {
-          display: block;
-          padding: 10px 15px;
-          color: #333;
-          font-size: 0.95rem;
-        }
-
-        .mmenu-submenu li a:hover {
-          background: #f5f5f5;
-          color: #e60028;
-        }
+      .mmenu-submenu li a {
+        display: block;
+        padding: 10px 15px;
+        color: #333;
+        font-size: 0.95rem;
       }
-    </style>
-    <script type="application/ld+json">
+
+      .mmenu-submenu li a:hover {
+        background: #f5f5f5;
+        color: #e60028;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ClothingStore",
@@ -244,25 +233,25 @@
         "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-15:00"
       }
     </script>
-  </head>
+</head>
 
-  <body class="home-page is-dropdn-click has-slider">
-    <h1 class="visually-hidden">
-      Best Fashion Store in Zimbabwe | Edgars Stores Zimbabwe
-    </h1>
-    <style></style>
-    <div class="body-preloader">
-      <div class="loader-wrap">
-        <div class="dots">
-          <div class="dot one"></div>
-          <div class="dot two"></div>
-          <div class="dot three"></div>
-        </div>
+<body class="home-page is-dropdn-click has-slider">
+  <h1 class="visually-hidden">
+    Best Fashion Store in Zimbabwe | Edgars Stores Zimbabwe
+  </h1>
+  <style></style>
+  <div class="body-preloader">
+    <div class="loader-wrap">
+      <div class="dots">
+        <div class="dot one"></div>
+        <div class="dot two"></div>
+        <div class="dot three"></div>
       </div>
     </div>
-    <header class="hdr global_width hdr_sticky hdr-mobile-style2">
-      <!-- Promo TopLine -->
-      <!-- <div class="bgcolor" style="background-image: url(images/promo-topline-bg.png);">
+  </div>
+  <header class="hdr global_width hdr_sticky hdr-mobile-style2">
+    <!-- Promo TopLine -->
+    <!-- <div class="bgcolor" style="background-image: url(images/promo-topline-bg.png);">
             <div class="promo-topline" data-expires="1" style="display: none;">
                 <div class="container">
                     <div class="promo-topline-item"><b>SHOP YOUR FAVORITE FASHON, BEAUTY AND ELECTRONICS PRODUCTS ONLINE
@@ -271,387 +260,323 @@
                 </div><a href="#" class="promo-topline-close js-promo-topline-close"><i class="icon-cross"></i></a>
             </div>
         </div> -->
-      <!-- /Promo TopLine -->
-      <!-- Mobile Menu -->
-      <div class="mobilemenu js-push-mbmenu">
-        <div class="mobilemenu-content">
-          <div class="mobilemenu-close mobilemenu-toggle">CLOSE</div>
-          <div class="mobilemenu-scroll">
-            <div class="nav-wrapper show-menu">
-              <ul class="nav mmenu-js mobile-nav-clean">
-                <!-- Catalogue CTA -->
-                <li class="menu-cta">
-                  <div class="prd-block_actions_second">
-                    <div class="btn-wrap">
-                      <a
-                        class="btn btn-lg btn--add-to-cart-lg ml-2"
-                        href="images/Edgars Spring Catalogue.pdf"
-                        target="_blank"
-                        ><span>OUR CATALOGUE</span></a
-                      >
-                    </div>
+    <!-- /Promo TopLine -->
+    <!-- Mobile Menu -->
+    <div class="mobilemenu js-push-mbmenu">
+      <div class="mobilemenu-content">
+        <div class="mobilemenu-close mobilemenu-toggle">CLOSE</div>
+        <div class="mobilemenu-scroll">
+          <div class="nav-wrapper show-menu">
+            <ul class="nav mmenu-js mobile-nav-clean">
+              <!-- Catalogue CTA -->
+              <li class="menu-cta">
+                <div class="prd-block_actions_second">
+                  <div class="btn-wrap">
+                    <a class="btn btn-lg btn--add-to-cart-lg ml-2" href="images/Edgars Spring Catalogue.pdf"
+                      target="_blank"><span>OUR CATALOGUE</span></a>
                   </div>
-                </li>
-                <!-- Section: Core -->
-                <li class="menu-section">Core</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                </div>
+              </li>
+              <!-- Section: Core -->
+              <li class="menu-section">Core</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="faq.html">FAQ</a></li>
 
-                <!-- Section: Fashion -->
-                <li class="menu-section">Fashion</li>
-                <li><a href="menswear.html">Men’s Fashion</a></li>
-                <li><a href="ladieswear.html">Ladies’ Fashion</a></li>
-                <li><a href="kidswear.html">Kidswear</a></li>
-                <li><a href="beauty_products.html">Beauty & Fragrance</a></li>
-                <li><a href="underwear.html">Intimate Wear</a></li>
-                <li><a href="blog.html">Blog</a></li>
+              <!-- Section: Fashion -->
+              <li class="menu-section">Fashion</li>
+              <li><a href="menswear.html">Men’s Fashion</a></li>
+              <li><a href="ladieswear.html">Ladies’ Fashion</a></li>
+              <li><a href="kidswear.html">Kidswear</a></li>
+              <li><a href="beauty_products.html">Beauty & Fragrance</a></li>
+              <li><a href="underwear.html">Intimate Wear</a></li>
+              <li><a href="blog.html">Blog</a></li>
 
-                <!-- Section: Corporate -->
-                <li class="menu-section">Corporate</li>
-                <li><a href="club-social-responsibility.html">CSR</a></li>
+              <!-- Section: Corporate -->
+              <li class="menu-section">Corporate</li>
+              <li><a href="club-social-responsibility.html">CSR</a></li>
 
-                <!-- Section: Financial Services -->
-                <li class="menu-section">Financial Services</li>
-                <li><a href="account_opening.html">Account Opening</a></li>
-                <li><a href="account_payments.html">Account Payments</a></li>
-                <li><a href="my_life.html">My Life</a></li>
-                <li>
-                  <a href="hospital_cash_plan.html">Hospital Cash Plan</a>
-                </li>
+              <!-- Section: Financial Services -->
+              <li class="menu-section">Financial Services</li>
+              <li><a href="account_opening.html">Account Opening</a></li>
+              <li><a href="account_payments.html">Account Payments</a></li>
+              <li><a href="my_life.html">My Life</a></li>
+              <li>
+                <a href="hospital_cash_plan.html">Hospital Cash Plan</a>
+              </li>
 
-                <!-- Section: Support -->
-                <li class="menu-section">Support</li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
+              <!-- Section: Support -->
+              <li class="menu-section">Support</li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- /Mobile Menu -->
+    </div>
+    <!-- /Mobile Menu -->
 
-      <!-- Style overrides -->
-      <style>
-        /* Clean mobile nav styling */
-        .mobile-nav-clean {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          /* font-family: 'Helvetica Neue', Arial, sans-serif; */
-        }
+    <!-- Style overrides -->
+    <style>
+      /* Clean mobile nav styling */
+      .mobile-nav-clean {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+      }
 
-        .mobile-nav-clean li {
-          border-bottom: 1px solid #f0f0f0;
-        }
+      .mobile-nav-clean li {
+        border-bottom: 1px solid #f0f0f0;
+      }
 
-        .mobile-nav-clean a {
-          display: block;
-          padding: 14px 18px;
-          text-decoration: none;
-          color: #222;
-          font-size: 16px;
-          transition: background 0.2s, color 0.2s;
-        }
+      .mobile-nav-clean a {
+        display: block;
+        padding: 14px 18px;
+        text-decoration: none;
+        color: #222;
+        font-size: 16px;
+        transition: background 0.2s, color 0.2s;
+      }
 
-        .mobile-nav-clean a:hover {
-          background: #f9f9f9;
-          color: #e60028;
-          /* Edgars red */
-        }
+      .mobile-nav-clean a:hover {
+        background: #f9f9f9;
+        color: #e60028;
+        /* Edgars red */
+      }
 
-        /* Section headers */
-        .mobile-nav-clean .menu-section {
-          padding: 12px 18px 6px;
-          font-size: 13px;
-          font-weight: bold;
-          text-transform: uppercase;
-          color: #999;
-          background: #fafafa;
-          border-top: 2px solid #e60028;
-          border-bottom: none;
-        }
+      /* Section headers */
+      .mobile-nav-clean .menu-section {
+        padding: 12px 18px 6px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #999;
+        background: #fafafa;
+        border-top: 2px solid #e60028;
+        border-bottom: none;
+      }
 
-        /* CTA button */
-        .mobile-nav-clean .menu-cta {
-          padding: 20px;
-          text-align: center;
-          border: none;
-        }
+      /* CTA button */
+      .mobile-nav-clean .menu-cta {
+        padding: 20px;
+        text-align: center;
+        border: none;
+      }
 
-        .mobile-nav-clean .btn-catalogue {
-          display: inline-block;
-          background: #e60028;
-          color: #fff !important;
-          padding: 12px 20px;
-          font-size: 16px;
-          border-radius: 4px;
-          font-weight: bold;
-          text-transform: uppercase;
-          text-decoration: none;
-          transition: background 0.2s;
-        }
+      .mobile-nav-clean .btn-catalogue {
+        display: inline-block;
+        background: #e60028;
+        color: #fff !important;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
 
-        .mobile-nav-clean .btn-catalogue:hover {
-          background: #c00022;
-        }
-        li .menu-cta {
-          text-align: center;
-          margin: 20px 0;
-          width: 100%;
-          background-color: #e60028;
-        }
-      </style>
+      .mobile-nav-clean .btn-catalogue:hover {
+        background: #c00022;
+      }
 
-      <div class="hdr-mobile show-mobile">
-        <div class="hdr-content">
-          <div class="container">
-            <!-- Menu Toggle -->
-            <div class="menu-toggle">
-              <a class="mobilemenu-toggle" href="#"
-                ><i class="icon icon-menu"></i
-              ></a>
-            </div>
-            <!-- /Menu Toggle -->
-            <div class="logo-holder">
-              <a class="logo" href="index.html"
-                ><img
-                  alt="Edgars Stores Zimbabwe logo"
-                  src="images/logo.png"
-                  srcset="images/logo-retina.png 2x"
-              /></a>
-            </div>
-            <div class="hdr-mobile-right">
-              <div class="hdr-topline-right links-holder"></div>
-              <div class="minicart-holder"></div>
-            </div>
+      li .menu-cta {
+        text-align: center;
+        margin: 20px 0;
+        width: 100%;
+        background-color: #e60028;
+      }
+    </style>
+
+    <div class="hdr-mobile show-mobile">
+      <div class="hdr-content">
+        <div class="container">
+          <!-- Menu Toggle -->
+          <div class="menu-toggle">
+            <a class="mobilemenu-toggle" href="#"><i class="icon icon-menu"></i></a>
+          </div>
+          <!-- /Menu Toggle -->
+          <div class="logo-holder">
+            <a class="logo" href="index.html"><img alt="Edgars Stores Zimbabwe logo" src="images/logo.png"
+                srcset="images/logo-retina.png 2x" /></a>
+          </div>
+          <div class="hdr-mobile-right">
+            <div class="hdr-topline-right links-holder"></div>
+            <div class="minicart-holder"></div>
           </div>
         </div>
       </div>
-      <div class="hdr-desktop hide-mobile">
-        <div class="hdr-content hide-mobile">
-          <div class="container">
-            <div class="row">
-              <div class="col-auto logo-holder">
-                <a class="logo" href="index.html"
-                  ><img
-                    alt="Edgars Stores Zimbabwe logo"
-                    src="images/logo.png"
-                    srcset="images/logo-retina.png 2x"
-                /></a>
-              </div>
-              <!--navigation-->
-              <div class="prev-menu-scroll icon-angle-left prev-menu-js"></div>
-              <div class="nav-holder">
-                <div class="hdr-nav">
-                  <!--mmenu-->
-                  <ul class="mmenu mmenu-js">
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">Our Story</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li><a href="about.html" title="">About Us</a></li>
-                          <li><a href="faq.html" title="">Faq</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">Fashion</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li><a href="blog.html" title="">Blog</a></li>
-                          <li>
-                            <a
-                              href="menswear.html"
-                              title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                              >Menswear</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="ladieswear.html"
-                              title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                              >Ladieswear</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="kidswear.html"
-                              title="Shop Kids' Clothing in Zimbabwe - Edgars Stores"
-                              >Kidswear</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="beauty_products.html"
-                              title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores"
-                              >Beauty &amp; Fragrance</a
-                            >
-                          </li>
-                          <li>
-                            <a href="underwear.html" title="">Intimate Wear</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <!-- <li><a href="blog.html" title="">Blog</a></li> -->
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">CSR</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li>
-                            <a href="club-social-responsibility.html" title=""
-                              >Social Responsibility</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">Financial Services</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li>
-                            <a href="account_opening.html" title=""
-                              >Account Opening</a
-                            >
-                          </li>
-                          <li>
-                            <a href="account_payments.html" title=""
-                              >Account Payments</a
-                            >
-                          </li>
-                          <li><a href="my_life.html" title="">My Life</a></li>
-                          <li>
-                            <a href="hospital_cash_plan.html" title=""
-                              >Hospital Cash Plan</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">Contact Us</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li>
-                            <a href="contact.html" title="">Get in Touch</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mmenu-item--simple">
-                      <a href="#" title="">The Club</a>
-                      <div class="mmenu-submenu">
-                        <ul class="submenu-list">
-                          <li><a href="benefits.html" title="">Benefits</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <!-- <li class="mmenu-item--simple"><a href="thank-u.html" title="">Thank U</a>
+    </div>
+    <div class="hdr-desktop hide-mobile">
+      <div class="hdr-content hide-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto logo-holder">
+              <a class="logo" href="index.html"><img alt="Edgars Stores Zimbabwe logo" src="images/logo.png"
+                  srcset="images/logo-retina.png 2x" /></a>
+            </div>
+            <!--navigation-->
+            <div class="prev-menu-scroll icon-angle-left prev-menu-js"></div>
+            <div class="nav-holder">
+              <div class="hdr-nav">
+                <!--mmenu-->
+                <ul class="mmenu mmenu-js">
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">Our Story</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li><a href="about.html" title="">About Us</a></li>
+                        <li><a href="faq.html" title="">Faq</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">Fashion</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li><a href="blog.html" title="">Blog</a></li>
+                        <li>
+                          <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Menswear</a>
+                        </li>
+                        <li>
+                          <a href="ladieswear.html"
+                            title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Ladieswear</a>
+                        </li>
+                        <li>
+                          <a href="kidswear.html" title="Shop Kids' Clothing in Zimbabwe - Edgars Stores">Kidswear</a>
+                        </li>
+                        <li>
+                          <a href="beauty_products.html"
+                            title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores">Beauty &amp; Fragrance</a>
+                        </li>
+                        <li>
+                          <a href="underwear.html" title="">Intimate Wear</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- <li><a href="blog.html" title="">Blog</a></li> -->
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">CSR</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li>
+                          <a href="club-social-responsibility.html" title="">Social Responsibility</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">Financial Services</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li>
+                          <a href="account_opening.html" title="">Account Opening</a>
+                        </li>
+                        <li>
+                          <a href="account_payments.html" title="">Account Payments</a>
+                        </li>
+                        <li><a href="my_life.html" title="">My Life</a></li>
+                        <li>
+                          <a href="hospital_cash_plan.html" title="">Hospital Cash Plan</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">Contact Us</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li>
+                          <a href="contact.html" title="">Get in Touch</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mmenu-item--simple">
+                    <a href="#" title="">The Club</a>
+                    <div class="mmenu-submenu">
+                      <ul class="submenu-list">
+                        <li><a href="benefits.html" title="">Benefits</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- <li class="mmenu-item--simple"><a href="thank-u.html" title="">Thank U</a>
                                         <div class="mmenu-submenu">
                                             <ul class="submenu-list">
                                                 <li><a href="thank-u-terms-and-conditions.html" title="">Terms & Conditions</a></li>
                                             </ul>
                                         </div>
                                     </li> -->
-                    <li>
-                      <div class="prd-block_actions_second">
-                        <div class="btn-wrap">
-                          <a
-                            class="btn btn-lg btn--add-to-cart-lg ml-2"
-                            href="images/Edgars Spring Catalogue.pdf"
-                            target="_blank"
-                            ><span>OUR CATALOGUE</span></a
-                          >
-                        </div>
+                  <li>
+                    <div class="prd-block_actions_second">
+                      <div class="btn-wrap">
+                        <a class="btn btn-lg btn--add-to-cart-lg ml-2" href="images/Edgars Spring Catalogue.pdf"
+                          target="_blank"><span>OUR CATALOGUE</span></a>
                       </div>
-                    </li>
-                  </ul>
-                  <!--/mmenu-->
-                </div>
+                    </div>
+                  </li>
+                </ul>
+                <!--/mmenu-->
               </div>
-              <div class="next-menu-scroll icon-angle-right next-menu-js"></div>
-              <!--//navigation-->
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="sticky-holder compensate-for-scrollbar">
-        <div class="container">
-          <div class="row">
-            <a class="mobilemenu-toggle show-mobile" href="#"
-              ><i class="icon icon-menu"></i
-            ></a>
-            <div class="col-auto logo-holder-s">
-              <a class="logo" href="index.html"
-                ><img
-                  alt="Edgars Stores Zimbabwe logo"
-                  src="images/logo.png"
-                  srcset="images/logo-retina.png 2x"
-              /></a>
-            </div>
-            <!--navigation-->
-            <div class="prev-menu-scroll icon-angle-left prev-menu-js"></div>
-            <div class="nav-holder-s"></div>
             <div class="next-menu-scroll icon-angle-right next-menu-js"></div>
             <!--//navigation-->
-            <div class="col-auto minicart-holder-s"></div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="page-content">
-      <!-- BN Slider 1 -->
-      <div class="holder fullwidth full-nopad mt-0">
-        <div class="container">
-          <div class="bnslider-wrapper">
-            <div
-              class="bnslider bnslider--lg bnslider--darkarrows keep-scale"
-              data-autoplay="true"
-              data-slick='{"arrows": true, "dots": true}'
-              data-speed="5000"
-              data-start-height="815"
-              data-start-mheight="578"
-              data-start-mwidth="480"
-              data-start-width="1920"
-              id="bnslider-001"
-            >
-              <!-- <div class="bnslider bnslider--lg bnslider--darkarrows" id="bnslider-001" data-slick='{"arrows": true, "dots": true}' data-autoplay="true" data-speed="5000" data-start-width="1920" data-start-height="815" data-start-mwidth="480" data-start-mheight="578"> -->
-              <!-- <div class="bnslider-slide">
+    </div>
+    <div class="sticky-holder compensate-for-scrollbar">
+      <div class="container">
+        <div class="row">
+          <a class="mobilemenu-toggle show-mobile" href="#"><i class="icon icon-menu"></i></a>
+          <div class="col-auto logo-holder-s">
+            <a class="logo" href="index.html"><img alt="Edgars Stores Zimbabwe logo" src="images/logo.png"
+                srcset="images/logo-retina.png 2x" /></a>
+          </div>
+          <!--navigation-->
+          <div class="prev-menu-scroll icon-angle-left prev-menu-js"></div>
+          <div class="nav-holder-s"></div>
+          <div class="next-menu-scroll icon-angle-right next-menu-js"></div>
+          <!--//navigation-->
+          <div class="col-auto minicart-holder-s"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="page-content">
+    <!-- BN Slider 1 -->
+    <div class="holder fullwidth full-nopad mt-0">
+      <div class="container">
+        <div class="bnslider-wrapper">
+          <div class="bnslider bnslider--lg bnslider--darkarrows keep-scale" data-autoplay="true"
+            data-slick='{"arrows": true, "dots": true}' data-speed="5000" data-start-height="815"
+            data-start-mheight="578" data-start-mwidth="480" data-start-width="1920" id="bnslider-001">
+            <!-- <div class="bnslider bnslider--lg bnslider--darkarrows" id="bnslider-001" data-slick='{"arrows": true, "dots": true}' data-autoplay="true" data-speed="5000" data-start-width="1920" data-start-height="815" data-start-mwidth="480" data-start-mheight="578"> -->
+            <!-- <div class="bnslider-slide">
                             <div class="bnslider-image-mobile" style="background-image: url('images/slider/slide2-mobile.jpg');"></div>
                             <div class="bnslider-image" style="background-image: url('images/slider/edgars-summer.jpg');">
                             </div>
                         </div> -->
-              <!--div class="bnslider-slide">
+            <!--div class="bnslider-slide">
                             <div class="bnslider-image-mobile" style="background-image: url('images/slider/slide2-mobile.jpg');"></div>
                             <div class="bnslider-image" style="background-image: url('images/slider/fathers.jpg');">
                             </div>
                         </div-->
-              <div class="bnslider-slide">
-                <div
-                  class="bnslider-image-mobile"
-                  style="background-image: url('images/slider/mobile-feb2026.png')"
-                ></div>
-                <div
-                  class="bnslider-image"
-                  style="
-                    background-image: url('images/slider/usd-account.jpeg');
-                  "
-                ></div>
+            <div class="bnslider-slide">
+              <div class="bnslider-image-mobile" style="background-image: url('images/slider/mobile-feb2026.png')">
               </div>
-              <div class="bnslider-slide">
-                <div
-                  class="bnslider-image-mobile"
-                  style="background-image: url('images/slider/mobile2.jpg')"
-                ></div>
-                <div
-                  class="bnslider-image"
-                  style="
+              <div class="bnslider-image" style="
+                    background-image: url('images/slider/16.5.jpg');
+                  "></div>
+            </div>
+            <div class="bnslider-slide">
+              <div class="bnslider-image-mobile" style="background-image: url('images/slider/mobile2.jpg')"></div>
+              <div class="bnslider-image" style="
                     background-image: url('images/slider/opening\ hours.jpg');
-                  "
-                ></div>
-              </div>
-              <!-- <div class="bnslider-slide bnslide-fashion-1">
+                  "></div>
+            </div>
+            <!-- <div class="bnslider-slide bnslide-fashion-1">
                             <div class="bnslider-image-mobile"
                                 style="background-image: url('images/slider/slide1-mobile.jpg');"></div>
                             <div class="bnslider-image" style="background-image: url('images/slider/HER.jpg');">
@@ -677,1005 +602,636 @@
                                 </div>
                             </div> 
                         </div> -->
-            </div>
-            <div class="bnslider-loader">
-              <div class="loader-wrap">
-                <div class="dots">
-                  <div class="dot one"></div>
-                  <div class="dot two"></div>
-                  <div class="dot three"></div>
-                </div>
-              </div>
-            </div>
-            <div class="bnslider-arrows container-fluid">
-              <div></div>
-            </div>
-            <div class="bnslider-dots vert-dots container-fluid"></div>
           </div>
-        </div>
-      </div>
-
-            <div class="holder bgcolor bgcolor-1 mt-0">
-        <div class="container">
-          <div class="row shop-features-style3">
-            <div class="col-md">
-              <a class="shop-feature light-color" href="images/2025 Edgars Corporate Catalogue.pdf" target="_blank">
-                <div class="shop-feature-text">
-                  <div class="text1">Make the Office your Runway</div>
-                  <div class="text2"><center>Download our Corporate Catalogue</center></div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a
-        class="whatsapp-button"
-        href="https://whatsapp.com/channel/0029VabKtDz7YSd9MynGcp1v"
-        target="_blank"
-      >
-        <i class="fab fa-whatsapp whatsapp-icon"></i>
-      </a>
-      <!-- //BN Slider 1 -->
-      <div class="seo-intro">
-        <p>
-          Welcome to Edgars Stores Zimbabwe — the leading fashion store in
-          Zimbabwe. We bring you trendy, affordable fashion for men, women, and
-          kids, plus beauty and fragrance collections. Discover why Edgars is
-          known as the best fashion store in Zimbabwe.
-        </p>
-
-        <h2>Why Shop at Edgars Stores?</h2>
-        <p>
-          With branches across Zimbabwe, Edgars combines quality, affordability,
-          and the latest fashion trends — making us your go-to clothing store in
-          Zimbabwe.
-        </p>
-      </div>
-      <div class="holder fullboxed bgcolor mt-0 py-2 py-sm-3">
-        <div class="container">
-          <div class="row bnr-grid">
-            <div class="col-md">
-              <a
-                class="bnr-wrap"
-                href="menswear.html"
-                target="_blank"
-                title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-              >
-                <div
-                  class="bnr bnr1 bnr--style-1 bnr--right bnr--middle bnr-hover-scale"
-                  data-fontratio="5.55"
-                >
-                  <img
-                    alt="Edgars Stores Zimbabwe fashion collection"
-                    class="lazyload"
-                    data-src="images/home-fashion/mens2025.jpg"
-                    src="images/placeholder.png"
-                  />
-                  <span class="bnr-caption"
-                    ><span class="bnr-text-wrap">
-                      <!-- <span class="bnr-text1">new arrivals</span> -->
-                      <span class="bnr-text2">men’s</span>
-                      <span class="btn-decor bnr-btn"
-                        >VIEW COLLECTION<span class="btn-line"></span
-                      ></span>
-                    </span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md">
-              <a
-                class="bnr-wrap"
-                href="ladieswear.html"
-                target="_blank"
-                title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-              >
-                <div
-                  class="bnr bnr2 bnr--style-1 bnr--left bnr--middle bnr-hover-scale"
-                  data-fontratio="5.55"
-                >
-                  <img
-                    alt="Edgars Stores Zimbabwe fashion collection"
-                    class="lazyload"
-                    data-src="images/home-fashion/womens2025.jpg"
-                    src="images/placeholder.png"
-                  />
-                  <span class="bnr-caption"
-                    ><span class="bnr-text-wrap">
-                      <!-- <span class="bnr-text1">new arrivals</span> -->
-                      <span class="bnr-text2">women’s</span>
-                      <span class="btn-decor bnr-btn"
-                        >VIEW COLLECTION<span class="btn-line"></span
-                      ></span>
-                    </span>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="holder fullboxed bgcolor mt-0 pb-2 pb-sm-3">
-        <div class="container">
-          <div class="row bnr-grid">
-            <div class="col-md">
-              <a
-                class="bnr-wrap"
-                href="kidswear.html"
-                target="_blank"
-                title="Shop Kids' Clothing in Zimbabwe - Edgars Stores"
-              >
-                <div
-                  class="bnr bnr1 bnr--style-1 bnr--right bnr--middle bnr-hover-scale"
-                  data-fontratio="5.55"
-                >
-                  <img
-                    alt="Edgars Stores Zimbabwe fashion collection"
-                    class="lazyload"
-                    data-src="images/home-fashion/kids2026.jpg"
-                    src="images/placeholder.png"
-                  />
-                  <span class="bnr-caption"
-                    ><span class="bnr-text-wrap">
-                      <!-- <span class="bnr-text1">new arrivals</span> -->
-                      <span class="bnr-text2">kids fashion</span>
-                      <span class="btn-decor bnr-btn"
-                        >VIEW COLLECTION<span class="btn-line"></span
-                      ></span>
-                    </span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md">
-              <a
-                class="bnr-wrap"
-                href="beauty_products.html"
-                target="_blank"
-                title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores"
-              >
-                <div
-                  class="bnr bnr2 bnr--style-1 bnr--left bnr--middle bnr-hover-scale"
-                  data-fontratio="5.55"
-                >
-                  <img
-                    alt="Edgars Stores Zimbabwe fashion collection"
-                    class="lazyload"
-                    data-src="images/home-fashion/beauty2025.png"
-                    src="images/placeholder.png"
-                  />
-                  <span class="bnr-caption"
-                    ><span class="bnr-text-wrap">
-                      <!-- <span class="bnr-text1">new arrivals</span> -->
-                      <span class="bnr-text2">Beauty &amp; Fragrance</span>
-                      <span class="btn-decor bnr-btn"
-                        >VIEW COLLECTION<span class="btn-line"></span
-                      ></span>
-                    </span>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="holder fullboxed mt-0 py-2 py-sm-3">
-        <div class="container">
-          <div class="row bnr-grid">
-            <a
-              href="https://forms.office.com/Pages/ResponsePage.aspx?id=9eVxH1bnhEigFz5ZeET9RoJd06ch7lRAtUHbe_jGSsJUNk5HNFNEUFY3SlNYUUtGTExTVzgwOFFZNS4u"
-              ><img
-                alt="Edgars Stores Zimbabwe fashion collection"
-                class="img-fluid rounded-top"
-                src="images/newsletter/superbrands.jpeg"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="holder" style="display: none;">
-        <div class="container">
-          <div class="title-with-right">
-            <h2 class="h1-style">Our Turkey Fashion</h2>
-            <div
-              class="prd-carousel-tabs js-filters-prd d-none d-md-flex"
-              data-grid="tabCarousel-01"
-            >
-              <span class="active" data-filter="prd">All</span>
-              <span data-filter="prd-bodycare">LADIES</span>
-              <span data-filter="prd-underwear">LADIES</span>
-              <span data-filter="prd-baby">MEN</span>
-              <span data-filter="prd-bedding">MEN</span>
-            </div>
-            <div class="prd-carousel-tabs js-filters-prd-sm d-md-none">
-              <span class="filters-label active" data-filter=".prd">All</span>
-              <span class="filters-label" data-filter=".prd-bodycare"
-                >Body Care</span
-              >
-              <span class="filters-label" data-filter=".prd-underwear"
-                >Underwear</span
-              >
-              <span class="filters-label" data-filter=".prd-baby">Baby</span>
-              <span class="filters-label" data-filter=".prd-bedding"
-                >Bedding &amp; Linen</span
-              >
-            </div>
-          </div>
-          <div
-            class="prd-grid prd-carousel js-prd-carousel-tab slick-arrows-aside-simple slick-arrows-mobile-lg data-to-show-4 data-to-show-md-3 data-to-show-sm-3 data-to-show-xs-2 js-product-isotope-sm"
-            data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
-            id="tabCarousel-01"
-          >
-            <div class="prd prd-has-loader prd-bodycare">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="floral dress"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_3.jpg"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Ladies sleeveless cowl top with sequin pencil skirt</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-underwear">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="white dress"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_8.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >White Formal Dress</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-baby prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="kigili suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_15.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >KIGILI</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Grey Suit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bedding prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="Dark grey suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_8.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Dark Grey Suit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bodycare">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="Formal Button Dress"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product.jpg"
-                      src="images/products/product-placeholder.png"
-                    />
-                  </a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a href="#">White Buttoned Dress</a>
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-underwear prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="leaf graphic jumpsuit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_7.jpg"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Jumpsuit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-baby prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="blue shirt white Trousers"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_13.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Kiğili</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Blue Shirt White Trousers</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bedding">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="blue mens Trousers"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_12.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Blue Trousers</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bodycare">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="Black dress &amp; White Blouse"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_2.jpg"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a href="#">Black dress &amp; White Blouse</a>
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-underwear prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="blue ladies suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_4.jpg"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Blue Ladies' Suit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-baby prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="Nay suit blue shirt"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_17.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Kiğili</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Navy Suit Blue shirt</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bedding">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="Blue Suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_16.png"
-                      src="images/products/product-placeholder.png"
-                    />
-                  </a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Blue Lined Suit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bodycare prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="White dress"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_6.jpg"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title"><a href="#">White Dress</a></h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-underwear prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="ladieswear.html"
-                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="White ladies suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/new-pictures/product_9.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="ladieswear.html"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >White Suit w/Floral Blouse</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-baby prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="grey Trousers white tee tshirt"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_18.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Kiğili</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Grey Trousers White T-Shirt</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd-has-loader prd-bedding prd-has-countdown">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a
-                    class="prd-img"
-                    href="menswear.html"
-                    title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                    ><img
-                      alt="beige mens suit"
-                      class="js-prd-img lazyload"
-                      data-srcset="images/products/Artboard1_7.png"
-                      src="images/products/product-placeholder.png"
-                  /></a>
-                  <div class="gdw-loader"></div>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-tag prd-hidemobile">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Charter Club</a
-                    >
-                  </div>
-                  <h2 class="prd-title">
-                    <a
-                      href="menswear.html"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Beige Men's Suit</a
-                    >
-                  </h2>
-                  <div class="prd-rating prd-hidemobile">
-                    <i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star fill"></i><i class="icon-star fill"></i
-                    ><i class="icon-star"></i>
-                  </div>
-                </div>
+          <div class="bnslider-loader">
+            <div class="loader-wrap">
+              <div class="dots">
+                <div class="dot one"></div>
+                <div class="dot two"></div>
+                <div class="dot three"></div>
               </div>
             </div>
           </div>
-          <!-- <button type="submit" class="btn-decor">subscribe</button> -->
-          <div class="prd-block_actions">
-            <!-- <div class="btn-wrap"><button class="btn btn-lg btn--add-to-cart-lg"><span>VIEW COLLECTION</span></button> -->
+          <div class="bnslider-arrows container-fluid">
+            <div></div>
           </div>
+          <div class="bnslider-dots vert-dots container-fluid"></div>
         </div>
       </div>
     </div>
 
-    <div class="holder fullwidth full-nopad bgcolor bgcolor-1">
+    <div class="holder bgcolor bgcolor-1 mt-0">
       <div class="container">
-        <div class="row no-gutters align-items-center">
+        <div class="row shop-features-style3">
           <div class="col-md">
-            <a
-              class="bnr bnr--style-2 bnr--center bnr--middle"
-              data-fontratio="9.52"
-              href="images/Club Magazine Oct to Dec 2025_Web.pdf"
-              target="_blank"
-              ><span class="bnr-caption"
-                ><span class="bnr-text-wrap"
-                  ><span class="bnr-text1">2025 CHRISTMAS ISSUE OUT NOW!</span>
-                  <span class="bnr-text2">THE EDGARS CLUB MAGAZINE</span>
-                  <span class="btn-decor bnr-btn btn-decor--whiteline"
-                    >Download Latest Issue Here<span
-                      class="btn-line"
-                    ></span></span></span></span
-            ></a>
-          </div>
-          <div class="col-md d-none d-md-block">
-            <a class="bnr bnr--left bnr--middle" href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe fashion collection"
-                class="lazyload"
-                data-src="images/home-fashion/magazine-xmas.jpeg"
-                src="images/placeholder.png"
-            /></a>
+            <a class="shop-feature light-color" href="images/2025 Edgars Corporate Catalogue.pdf" target="_blank">
+              <div class="shop-feature-text">
+                <div class="text1">Make the Office your Runway</div>
+                <div class="text2">
+                  <center>Download our Corporate Catalogue</center>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="holder">
+    <a class="whatsapp-button" href="https://whatsapp.com/channel/0029VabKtDz7YSd9MynGcp1v" target="_blank">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <!-- //BN Slider 1 -->
+    <div class="seo-intro">
+      <p>
+        Welcome to Edgars Stores Zimbabwe — the leading fashion store in
+        Zimbabwe. We bring you trendy, affordable fashion for men, women, and
+        kids, plus beauty and fragrance collections. Discover why Edgars is
+        known as the best fashion store in Zimbabwe.
+      </p>
+
+      <h2>Why Shop at Edgars Stores?</h2>
+      <p>
+        With branches across Zimbabwe, Edgars combines quality, affordability,
+        and the latest fashion trends — making us your go-to clothing store in
+        Zimbabwe.
+      </p>
+    </div>
+    <div class="holder fullboxed bgcolor mt-0 py-2 py-sm-3">
       <div class="container">
-        <ul class="brand-carousel js-brand-carousel slick-arrows-aside-simple">
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-11.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-2.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-10.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-4.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-5.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-3.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-7.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-8.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-9.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-6.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="lazyload"
-                data-src="images/brand/menu-brand-1.png"
-                src="images/brand/brand-logo-placeholder.png"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <footer class="page-footer footer-style-1 global_width">
-      <div class="holder bgcolor bgcolor-1 mt-0">
-        <div class="container">
-          <div class="row shop-features-style3">
-            <div class="col-md">
-              <a class="shop-feature light-color" href="#">
-                <div class="shop-feature-icon"><i class="icon-box3"></i></div>
-                <div class="shop-feature-text">
-                  <div class="text1">Quality Guaranteed</div>
-                  <div class="text2">We stock all brands in all stores</div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md">
-              <a class="shop-feature light-color" href="contact.html">
-                <div class="shop-feature-icon"><i class="icon-call"></i></div>
-                <div class="shop-feature-text">
-                  <div class="text1">Customer support</div>
-                  <div class="text2">Call our call centre today</div>
-                </div>
-              </a>
-            </div>
+        <div class="row bnr-grid">
+          <div class="col-md">
+            <a class="bnr-wrap" href="menswear.html" target="_blank"
+              title="Shop Men's Fashion in Zimbabwe - Edgars Stores">
+              <div class="bnr bnr1 bnr--style-1 bnr--right bnr--middle bnr-hover-scale" data-fontratio="5.55">
+                <img alt="Edgars Stores Zimbabwe fashion collection" class="lazyload"
+                  data-src="images/home-fashion/mens2025.jpg" src="images/placeholder.png" />
+                <span class="bnr-caption"><span class="bnr-text-wrap">
+                    <!-- <span class="bnr-text1">new arrivals</span> -->
+                    <span class="bnr-text2">men’s</span>
+                    <span class="btn-decor bnr-btn">VIEW COLLECTION<span class="btn-line"></span></span>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md">
+            <a class="bnr-wrap" href="ladieswear.html" target="_blank"
+              title="Shop Women's Fashion in Zimbabwe - Edgars Stores">
+              <div class="bnr bnr2 bnr--style-1 bnr--left bnr--middle bnr-hover-scale" data-fontratio="5.55">
+                <img alt="Edgars Stores Zimbabwe fashion collection" class="lazyload"
+                  data-src="images/home-fashion/womens2025.jpg" src="images/placeholder.png" />
+                <span class="bnr-caption"><span class="bnr-text-wrap">
+                    <!-- <span class="bnr-text1">new arrivals</span> -->
+                    <span class="bnr-text2">women’s</span>
+                    <span class="btn-decor bnr-btn">VIEW COLLECTION<span class="btn-line"></span></span>
+                  </span>
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <!-- <div class="holder bgcolor bgcolor-2 py-5 mt-0">
+    </div>
+    <div class="holder fullboxed bgcolor mt-0 pb-2 pb-sm-3">
+      <div class="container">
+        <div class="row bnr-grid">
+          <div class="col-md">
+            <a class="bnr-wrap" href="kidswear.html" target="_blank"
+              title="Shop Kids' Clothing in Zimbabwe - Edgars Stores">
+              <div class="bnr bnr1 bnr--style-1 bnr--right bnr--middle bnr-hover-scale" data-fontratio="5.55">
+                <img alt="Edgars Stores Zimbabwe fashion collection" class="lazyload"
+                  data-src="images/home-fashion/kids2026.jpg" src="images/placeholder.png" />
+                <span class="bnr-caption"><span class="bnr-text-wrap">
+                    <!-- <span class="bnr-text1">new arrivals</span> -->
+                    <span class="bnr-text2">kids fashion</span>
+                    <span class="btn-decor bnr-btn">VIEW COLLECTION<span class="btn-line"></span></span>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md">
+            <a class="bnr-wrap" href="beauty_products.html" target="_blank"
+              title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores">
+              <div class="bnr bnr2 bnr--style-1 bnr--left bnr--middle bnr-hover-scale" data-fontratio="5.55">
+                <img alt="Edgars Stores Zimbabwe fashion collection" class="lazyload"
+                  data-src="images/home-fashion/beauty2025.png" src="images/placeholder.png" />
+                <span class="bnr-caption"><span class="bnr-text-wrap">
+                    <!-- <span class="bnr-text1">new arrivals</span> -->
+                    <span class="bnr-text2">Beauty &amp; Fragrance</span>
+                    <span class="btn-decor bnr-btn">VIEW COLLECTION<span class="btn-line"></span></span>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="holder fullboxed mt-0 py-2 py-sm-3">
+      <div class="container">
+        <div class="row bnr-grid">
+          <a
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=9eVxH1bnhEigFz5ZeET9RoJd06ch7lRAtUHbe_jGSsJUNk5HNFNEUFY3SlNYUUtGTExTVzgwOFFZNS4u"><img
+              alt="Edgars Stores Zimbabwe fashion collection" class="img-fluid rounded-top"
+              src="images/newsletter/superbrands.jpeg" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="holder" style="display: none;">
+      <div class="container">
+        <div class="title-with-right">
+          <h2 class="h1-style">Our Turkey Fashion</h2>
+          <div class="prd-carousel-tabs js-filters-prd d-none d-md-flex" data-grid="tabCarousel-01">
+            <span class="active" data-filter="prd">All</span>
+            <span data-filter="prd-bodycare">LADIES</span>
+            <span data-filter="prd-underwear">LADIES</span>
+            <span data-filter="prd-baby">MEN</span>
+            <span data-filter="prd-bedding">MEN</span>
+          </div>
+          <div class="prd-carousel-tabs js-filters-prd-sm d-md-none">
+            <span class="filters-label active" data-filter=".prd">All</span>
+            <span class="filters-label" data-filter=".prd-bodycare">Body Care</span>
+            <span class="filters-label" data-filter=".prd-underwear">Underwear</span>
+            <span class="filters-label" data-filter=".prd-baby">Baby</span>
+            <span class="filters-label" data-filter=".prd-bedding">Bedding &amp; Linen</span>
+          </div>
+        </div>
+        <div
+          class="prd-grid prd-carousel js-prd-carousel-tab slick-arrows-aside-simple slick-arrows-mobile-lg data-to-show-4 data-to-show-md-3 data-to-show-sm-3 data-to-show-xs-2 js-product-isotope-sm"
+          data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' id="tabCarousel-01">
+          <div class="prd prd-has-loader prd-bodycare">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="floral dress" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_3.jpg"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Ladies sleeveless
+                    cowl top with sequin pencil skirt</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-underwear">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="white dress" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_8.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">White Formal
+                    Dress</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-baby prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="kigili suit" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_15.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">KIGILI</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Grey Suit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bedding prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="Dark grey suit" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_8.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Dark Grey Suit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bodycare">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="Formal Button Dress" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product.jpg"
+                    src="images/products/product-placeholder.png" />
+                </a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="#">White Buttoned Dress</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-underwear prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="leaf graphic jumpsuit" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_7.jpg"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Jumpsuit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-baby prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="blue shirt white Trousers" class="js-prd-img lazyload"
+                    data-srcset="images/products/Artboard1_13.png" src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Kiğili</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Blue Shirt White
+                    Trousers</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bedding">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="blue mens Trousers" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_12.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Blue Trousers</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bodycare">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="Black dress &amp; White Blouse" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_2.jpg"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="#">Black dress &amp; White Blouse</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-underwear prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="blue ladies suit" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_4.jpg"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Blue Ladies'
+                    Suit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-baby prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="Nay suit blue shirt" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_17.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Kiğili</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Navy Suit Blue
+                    shirt</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bedding">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="Blue Suit" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_16.png"
+                    src="images/products/product-placeholder.png" />
+                </a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Blue Lined Suit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bodycare prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="White dress" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_6.jpg"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title"><a href="#">White Dress</a></h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-underwear prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="White ladies suit" class="js-prd-img lazyload"
+                    data-srcset="images/products/new-pictures/product_9.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="ladieswear.html" title="Shop Women's Fashion in Zimbabwe - Edgars Stores">White Suit w/Floral
+                    Blouse</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-baby prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="grey Trousers white tee tshirt" class="js-prd-img lazyload"
+                    data-srcset="images/products/Artboard1_18.png" src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Kiğili</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Grey Trousers White
+                    T-Shirt</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd-has-loader prd-bedding prd-has-countdown">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a class="prd-img" href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores"><img
+                    alt="beige mens suit" class="js-prd-img lazyload" data-srcset="images/products/Artboard1_7.png"
+                    src="images/products/product-placeholder.png" /></a>
+                <div class="gdw-loader"></div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-tag prd-hidemobile">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Charter Club</a>
+                </div>
+                <h2 class="prd-title">
+                  <a href="menswear.html" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Beige Men's Suit</a>
+                </h2>
+                <div class="prd-rating prd-hidemobile">
+                  <i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i
+                    class="icon-star fill"></i><i class="icon-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button type="submit" class="btn-decor">subscribe</button> -->
+        <div class="prd-block_actions">
+          <!-- <div class="btn-wrap"><button class="btn btn-lg btn--add-to-cart-lg"><span>VIEW COLLECTION</span></button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="holder fullwidth full-nopad bgcolor bgcolor-1">
+    <div class="container">
+      <div class="row no-gutters align-items-center">
+        <div class="col-md">
+          <a class="bnr bnr--style-2 bnr--center bnr--middle" data-fontratio="9.52"
+            href="images/Club Magazine Oct to Dec 2025_Web.pdf" target="_blank"><span class="bnr-caption"><span
+                class="bnr-text-wrap"><span class="bnr-text1">2025 CHRISTMAS ISSUE OUT NOW!</span>
+                <span class="bnr-text2">THE EDGARS CLUB MAGAZINE</span>
+                <span class="btn-decor bnr-btn btn-decor--whiteline">Download Latest Issue Here<span
+                    class="btn-line"></span></span></span></span></a>
+        </div>
+        <div class="col-md d-none d-md-block">
+          <a class="bnr bnr--left bnr--middle" href="#"><img alt="Edgars Stores Zimbabwe fashion collection"
+              class="lazyload" data-src="images/home-fashion/magazine-xmas.jpeg" src="images/placeholder.png" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="holder">
+    <div class="container">
+      <ul class="brand-carousel js-brand-carousel slick-arrows-aside-simple">
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-11.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-2.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-10.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-4.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-5.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-3.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-7.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-8.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-9.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-6.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img alt="Edgars Stores Zimbabwe logo" class="lazyload" data-src="images/brand/menu-brand-1.png"
+              src="images/brand/brand-logo-placeholder.png" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="page-footer footer-style-1 global_width">
+    <div class="holder bgcolor bgcolor-1 mt-0">
+      <div class="container">
+        <div class="row shop-features-style3">
+          <div class="col-md">
+            <a class="shop-feature light-color" href="#">
+              <div class="shop-feature-icon"><i class="icon-box3"></i></div>
+              <div class="shop-feature-text">
+                <div class="text1">Quality Guaranteed</div>
+                <div class="text2">We stock all brands in all stores</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md">
+            <a class="shop-feature light-color" href="contact.html">
+              <div class="shop-feature-icon"><i class="icon-call"></i></div>
+              <div class="shop-feature-text">
+                <div class="text1">Customer support</div>
+                <div class="text2">Call our call centre today</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="holder bgcolor bgcolor-2 py-5 mt-0">
             <div class="container">
                 <div class="subscribe-form subscribe-form--style1">
                     <form action="https://formsubmit.co/31f61a78bfc8b41c09b089b70a69df4d" method="POST">
@@ -1691,310 +1247,231 @@
                 </div>
             </div>
         </div> -->
-      <div class="footer-top container">
-        <div class="row py-md-4">
-          <div class="col-md-4 col-lg">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Financial Services</h4>
-                <div class="toggle-arrow"></div>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li><a href="account_opening.html">Account Opening</a></li>
-                  <li><a href="account_payments.html">Account Payments</a></li>
-                  <!-- <li><a href="my_life.html">My Life</a></li> -->
-                  <li>
-                    <a href="hospital_cash_plan.html">Hospital Cash Plan</a>
-                  </li>
-                </ul>
-              </div>
+    <div class="footer-top container">
+      <div class="row py-md-4">
+        <div class="col-md-4 col-lg">
+          <div class="footer-block collapsed-mobile">
+            <div class="title">
+              <h4>Financial Services</h4>
+              <div class="toggle-arrow"></div>
             </div>
-          </div>
-          <div class="col-md-4 col-lg">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Customer Support</h4>
-                <div class="toggle-arrow"></div>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li><a href="faq.html">F.A.Q.</a></li>
-                  <li><a href="shopping-online.html">Stores Locator</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>My Edgars</h4>
-                <div class="toggle-arrow"></div>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li>
-                    <a
-                      href="menswear.html"
-                      target="_blank"
-                      title="Shop Men's Fashion in Zimbabwe - Edgars Stores"
-                      >Men's Fashion</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="ladieswear.html"
-                      target="_blank"
-                      title="Shop Women's Fashion in Zimbabwe - Edgars Stores"
-                      >Women's Fashion</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="kidswear.html"
-                      target="_blank"
-                      title="Shop Kids' Clothing in Zimbabwe - Edgars Stores"
-                      >Kid's Fashion</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="beauty_products.html"
-                      target="_blank"
-                      title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores"
-                      >Beauty &amp; Fragrance</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Own Your Look</h4>
-                <div class="toggle-arrow"></div>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li><a href="blog.html">Blog</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>contact us</h4>
-                <div class="toggle-arrow"></div>
-              </div>
-              <div class="collapsed-content">
-                <ul class="contact-list">
-                  <li>
-                    <i class="icon-phone"></i
-                    ><span
-                      ><span class="h6-style">Call Us:</span
-                      ><span>+263 86 77 000 139</span></span
-                    >
-                  </li>
-                  <li>
-                    <i class="icon-clock4"></i
-                    ><span
-                      ><span class="h6-style">Hours:</span
-                      ><span>Mon-Fri 9am-6pm | Sat 9am-3pm </span></span
-                    >
-                  </li>
-                  <li>
-                    <i class="icon-mail-envelope1"></i
-                    ><span
-                      ><span class="h6-style">E-mail:</span
-                      ><span
-                        ><a href="mailto:info@edgarsstores.co.zw"
-                          >info@edgars.co.zw</a
-                        ></span
-                      ></span
-                    >
-                  </li>
-                  <li>
-                    <i class="icon-location1"></i
-                    ><span
-                      ><span class="h6-style">Address:</span
-                      ><span
-                        >ZB LIFE TOWERS | 15th FLOOR - 77 JASON MOYO AVE | CNR
-                        SAM NUJOMA &amp; SPEKE AVE, HARARE</span
-                      ></span
-                    >
-                  </li>
-                </ul>
-              </div>
+            <div class="collapsed-content">
+              <ul>
+                <li><a href="account_opening.html">Account Opening</a></li>
+                <li><a href="account_payments.html">Account Payments</a></li>
+                <!-- <li><a href="my_life.html">My Life</a></li> -->
+                <li>
+                  <a href="hospital_cash_plan.html">Hospital Cash Plan</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom container">
-        <div class="row lined py-2 py-md-3">
-          <div class="col-md-2 hidden-mobile">
-            <a href="index.html"
-              ><img
-                alt="Edgars Stores Zimbabwe logo"
-                class="img-fluid"
-                src="images/logo-footer-dark.png"
-            /></a>
-          </div>
-          <div class="col-md-6 col-lg-5 footer-copyright">
-            <p class="footer-copyright-text">
-              <span>© Copyright</span> 2024
-              <a href="https://www.edgars.co.zw" target="_blank"
-                >Edgars Stores Limited</a
-              >. <span>All rights reserved.</span>
-            </p>
-          </div>
-          <div class="col-md-auto ml-lg-auto">
-            <ul class="social-list">
-              <li>
-                <a
-                  class="icon icon-facebook"
-                  href="https://www.facebook.com/edgarszimbabwe/"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="icon icon-twitter"
-                  href="https://twitter.com/edgarszw?lang=en"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="icon icon-instagram"
-                  href="https://instagram.com/edgarszw?igshid=rii92enph8wh"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="icon icon-youtube"
-                  href="https://www.youtube.com/channel/UCt3O2KDKPfJHeJ9LSL-LGwA"
-                ></a>
-              </li>
-            </ul>
+        <div class="col-md-4 col-lg">
+          <div class="footer-block collapsed-mobile">
+            <div class="title">
+              <h4>Customer Support</h4>
+              <div class="toggle-arrow"></div>
+            </div>
+            <div class="collapsed-content">
+              <ul>
+                <li><a href="faq.html">F.A.Q.</a></li>
+                <li><a href="shopping-online.html">Stores Locator</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <a
-      class="back-to-top js-back-to-top compensate-for-scrollbar"
-      href="#"
-      title="Scroll To Top"
-      ><i class="icon icon-angle-up"></i
-    ></a>
-    <div
-      class="modal-info modal--success"
-      id="modalWishlistAdd"
-      style="display: none"
-    >
-      <div class="modal-text">
-        <i class="icon icon-heart-fill modal-icon-info"></i
-        ><span>Product added to wishlist</span>
+        <div class="col-md-4 col-lg">
+          <div class="footer-block collapsed-mobile">
+            <div class="title">
+              <h4>My Edgars</h4>
+              <div class="toggle-arrow"></div>
+            </div>
+            <div class="collapsed-content">
+              <ul>
+                <li>
+                  <a href="menswear.html" target="_blank" title="Shop Men's Fashion in Zimbabwe - Edgars Stores">Men's
+                    Fashion</a>
+                </li>
+                <li>
+                  <a href="ladieswear.html" target="_blank"
+                    title="Shop Women's Fashion in Zimbabwe - Edgars Stores">Women's Fashion</a>
+                </li>
+                <li>
+                  <a href="kidswear.html" target="_blank" title="Shop Kids' Clothing in Zimbabwe - Edgars Stores">Kid's
+                    Fashion</a>
+                </li>
+                <li>
+                  <a href="beauty_products.html" target="_blank"
+                    title="Shop Beauty &amp; Fragrance in Zimbabwe - Edgars Stores">Beauty &amp; Fragrance</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg">
+          <div class="footer-block collapsed-mobile">
+            <div class="title">
+              <h4>Own Your Look</h4>
+              <div class="toggle-arrow"></div>
+            </div>
+            <div class="collapsed-content">
+              <ul>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-3">
+          <div class="footer-block collapsed-mobile">
+            <div class="title">
+              <h4>contact us</h4>
+              <div class="toggle-arrow"></div>
+            </div>
+            <div class="collapsed-content">
+              <ul class="contact-list">
+                <li>
+                  <i class="icon-phone"></i><span><span class="h6-style">Call Us:</span><span>+263 86 77 000
+                      139</span></span>
+                </li>
+                <li>
+                  <i class="icon-clock4"></i><span><span class="h6-style">Hours:</span><span>Mon-Fri 9am-6pm | Sat
+                      9am-3pm </span></span>
+                </li>
+                <li>
+                  <i class="icon-mail-envelope1"></i><span><span class="h6-style">E-mail:</span><span><a
+                        href="mailto:info@edgarsstores.co.zw">info@edgars.co.zw</a></span></span>
+                </li>
+                <li>
+                  <i class="icon-location1"></i><span><span class="h6-style">Address:</span><span>ZB LIFE TOWERS | 15th
+                      FLOOR - 77 JASON MOYO AVE | CNR
+                      SAM NUJOMA &amp; SPEKE AVE, HARARE</span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      class="modal-info modal--error"
-      id="modalWishlistRemove"
-      style="display: none"
-    >
-      <div class="modal-text">
-        <i class="icon icon-heart modal-icon-info"></i
-        ><span>Product removed from wishlist</span>
-      </div>
-    </div>
-    <div class="modal--checkout" id="modalCheckOut" style="display: none">
-      <div class="modal-header">
-        <div class="modal-header-title">
-          <i class="icon icon-check-box"></i
-          ><span>Product added to cart successfully!</span>
+    <div class="footer-bottom container">
+      <div class="row lined py-2 py-md-3">
+        <div class="col-md-2 hidden-mobile">
+          <a href="index.html"><img alt="Edgars Stores Zimbabwe logo" class="img-fluid"
+              src="images/logo-footer-dark.png" /></a>
+        </div>
+        <div class="col-md-6 col-lg-5 footer-copyright">
+          <p class="footer-copyright-text">
+            <span>© Copyright</span> 2024
+            <a href="https://www.edgars.co.zw" target="_blank">Edgars Stores Limited</a>. <span>All rights
+              reserved.</span>
+          </p>
+        </div>
+        <div class="col-md-auto ml-lg-auto">
+          <ul class="social-list">
+            <li>
+              <a class="icon icon-facebook" href="https://www.facebook.com/edgarszimbabwe/"></a>
+            </li>
+            <li>
+              <a class="icon icon-twitter" href="https://twitter.com/edgarszw?lang=en"></a>
+            </li>
+            <li>
+              <a class="icon icon-instagram" href="https://instagram.com/edgarszw?igshid=rii92enph8wh"></a>
+            </li>
+            <li>
+              <a class="icon icon-youtube" href="https://www.youtube.com/channel/UCt3O2KDKPfJHeJ9LSL-LGwA"></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modalchk-prd">
-            <div class="row h-font">
-              <div class="modalchk-prd-image col">
-                <a href="#"
-                  ><img alt="Glamor shoes" src="images/products/product-01.jpg"
-                /></a>
+    </div>
+  </footer>
+  <a class="back-to-top js-back-to-top compensate-for-scrollbar" href="#" title="Scroll To Top"><i
+      class="icon icon-angle-up"></i></a>
+  <div class="modal-info modal--success" id="modalWishlistAdd" style="display: none">
+    <div class="modal-text">
+      <i class="icon icon-heart-fill modal-icon-info"></i><span>Product added to wishlist</span>
+    </div>
+  </div>
+  <div class="modal-info modal--error" id="modalWishlistRemove" style="display: none">
+    <div class="modal-text">
+      <i class="icon icon-heart modal-icon-info"></i><span>Product removed from wishlist</span>
+    </div>
+  </div>
+  <div class="modal--checkout" id="modalCheckOut" style="display: none">
+    <div class="modal-header">
+      <div class="modal-header-title">
+        <i class="icon icon-check-box"></i><span>Product added to cart successfully!</span>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modalchk-prd">
+          <div class="row h-font">
+            <div class="modalchk-prd-image col">
+              <a href="#"><img alt="Glamor shoes" src="images/products/product-01.jpg" /></a>
+            </div>
+            <div class="modalchk-prd-info col">
+              <h2 class="modalchk-title"><a href="#">Glamor shoes</a></h2>
+              <div class="modalchk-price">$ 34.00</div>
+              <div class="prd-options">
+                <span class="label-options">Sizes:</span><span class="prd-options-val">xs</span>
               </div>
-              <div class="modalchk-prd-info col">
-                <h2 class="modalchk-title"><a href="#">Glamor shoes</a></h2>
-                <div class="modalchk-price">$ 34.00</div>
-                <div class="prd-options">
-                  <span class="label-options">Sizes:</span
-                  ><span class="prd-options-val">xs</span>
-                </div>
-                <div class="prd-options">
-                  <span class="label-options">Qty:</span
-                  ><span class="prd-options-val">1</span>
-                </div>
-                <div class="prd-options">
-                  <span class="label-options">Color:</span
-                  ><span class="prd-options-val">silver</span>
-                </div>
-                <div class="view-features-modal d-none d-sm-block">
-                  <a class="view-feature" href="#">
-                    <div class="view-feature-icon">
-                      <i class="icon-box3"></i>
-                    </div>
-                    <div class="view-feature-text">
-                      <div class="text1">Delivery</div>
-                      <div class="text2">Lorem ipsum dolor sit amet conset</div>
-                    </div>
-                  </a>
-                </div>
+              <div class="prd-options">
+                <span class="label-options">Qty:</span><span class="prd-options-val">1</span>
               </div>
-              <div class="view-features-modal d-sm-none">
+              <div class="prd-options">
+                <span class="label-options">Color:</span><span class="prd-options-val">silver</span>
+              </div>
+              <div class="view-features-modal d-none d-sm-block">
                 <a class="view-feature" href="#">
-                  <div class="view-feature-icon"><i class="icon-box3"></i></div>
+                  <div class="view-feature-icon">
+                    <i class="icon-box3"></i>
+                  </div>
                   <div class="view-feature-text">
                     <div class="text1">Delivery</div>
                     <div class="text2">Lorem ipsum dolor sit amet conset</div>
                   </div>
                 </a>
               </div>
-              <div class="modalchk-prd-actions col">
-                <h3 class="modalchk-title">
-                  There is <span class="custom-color">3</span> items in your
-                  cart
-                </h3>
-                <div class="prd-options">
-                  <span class="label-options">Total:</span
-                  ><span class="modalchk-total-price">$ 600.00</span>
+            </div>
+            <div class="view-features-modal d-sm-none">
+              <a class="view-feature" href="#">
+                <div class="view-feature-icon"><i class="icon-box3"></i></div>
+                <div class="view-feature-text">
+                  <div class="text1">Delivery</div>
+                  <div class="text2">Lorem ipsum dolor sit amet conset</div>
                 </div>
-                <div class="modalchk-custom">
-                  <img alt="Guaranteed" src="images/payment/guaranteed.png" />
-                </div>
-                <div class="modalchk-btns-wrap">
-                  <a class="btn" href="checkout.html">proceed to checkout</a>
-                  <a class="btn btn--alt" data-fancybox-close="" href="#"
-                    >continue viewping</a
-                  >
-                </div>
+              </a>
+            </div>
+            <div class="modalchk-prd-actions col">
+              <h3 class="modalchk-title">
+                There is <span class="custom-color">3</span> items in your
+                cart
+              </h3>
+              <div class="prd-options">
+                <span class="label-options">Total:</span><span class="modalchk-total-price">$ 600.00</span>
+              </div>
+              <div class="modalchk-custom">
+                <img alt="Guaranteed" src="images/payment/guaranteed.png" />
+              </div>
+              <div class="modalchk-btns-wrap">
+                <a class="btn" href="checkout.html">proceed to checkout</a>
+                <a class="btn btn--alt" data-fancybox-close="" href="#">continue viewping</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="modal--newsletter js-newslettermodal"
-      data-expires="1"
-      data-pause="5000"
-      style="display: none"
-    >
-      <div class="row no-gutters">
-        <!-- <div class="col-sm d-none d-md-flex align-items-center justify-content-center">
+  </div>
+  <div class="modal--newsletter js-newslettermodal" data-expires="1" data-pause="5000" style="display: none">
+    <div class="row no-gutters">
+      <!-- <div class="col-sm d-none d-md-flex align-items-center justify-content-center">
                 <div class="newslettermodal-img"><img src="images/newsletter/newsletter-popup-trading-hours.png" alt="Subscribe Us"></div>
             </div> -->
-        <div class="col-sm">
-          <div class="newslettermodal-content">
-            <!-- <div class="newslettermodal-content-center">
+      <div class="col-sm">
+        <div class="newslettermodal-content">
+          <!-- <div class="newslettermodal-content-center">
                         <div class="newslettermodal-content-logo"><img src="images/logo.png" alt=""></div>
                         <h3 class="h2-style newslettermodal-content-title">Sign up our newsletter</h3>
                         <div class="newslettermodal-content-text">GREAT NEWS! YOU CAN NOW CATCH UP WITH ALL THE TRENDING
@@ -2029,21 +1506,17 @@
                         </div>
                     </div> -->
 
-            <div class="newslettermodal-content-center">
-              <a
-                href="https://forms.office.com/Pages/ResponsePage.aspx?id=9eVxH1bnhEigFz5ZeET9RoJd06ch7lRAtUHbe_jGSsJUNk5HNFNEUFY3SlNYUUtGTExTVzgwOFFZNS4u"
-                ><img
-                  alt="Edgars Stores Zimbabwe fashion collection"
-                  height="100%"
-                  src="images/newsletter/scan now pay later-popup.jpg"
-                  width="100%"
-              /></a>
-            </div>
+          <div class="newslettermodal-content-center">
+            <a
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=9eVxH1bnhEigFz5ZeET9RoJd06ch7lRAtUHbe_jGSsJUNk5HNFNEUFY3SlNYUUtGTExTVzgwOFFZNS4u"><img
+                alt="Edgars Stores Zimbabwe fashion collection" height="100%"
+                src="images/newsletter/scan now pay later-popup.jpg" width="100%" /></a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="modal&#45;&#45;newsletter animated-modal js-newslettermodal" data-animation-duration="5000" id="modalNewsletter" style="display: none;" data-pause="1000">
+  </div>
+  <!-- <div class="modal&#45;&#45;newsletter animated-modal js-newslettermodal" data-animation-duration="5000" id="modalNewsletter" style="display: none;" data-pause="1000">
     <div class="modal-content">
     <div class="modal-body">
     <div class="row">
@@ -2058,26 +1531,27 @@
     </div>
     </div>
     </div> -->
-    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-    <script src="js/vendor/jquery/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/slick/slick.min.js"></script>
-    <script src="js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
-    <script src="js/vendor/instafeed/instafeed.min.js"></script>
-    <script src="js/vendor/countdown/jquery.countdown.min.js"></script>
-    <script src="js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="js/vendor/ez-plus/jquery.ez-plus.min.js"></script>
-    <script src="js/vendor/tocca/tocca.min.js"></script>
-    <script src="js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.min.js"></script>
-    <script src="js/vendor/isotope/jquery.isotope.min.js"></script>
-    <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/vendor/cookie/jquery.cookie.min.js"></script>
-    <script src="js/vendor/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="js/vendor/lazysizes/lazysizes.min.js"></script>
-    <script src="js/vendor/lazysizes/ls.bgset.min.js"></script>
-    <script src="js/vendor/form/jquery.form.min.js"></script>
-    <script src="js/vendor/form/validator.min.js"></script>
-    <script src="js/vendor/slider/slider.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+  <script src="js/vendor/jquery/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/vendor/slick/slick.min.js"></script>
+  <script src="js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+  <script src="js/vendor/instafeed/instafeed.min.js"></script>
+  <script src="js/vendor/countdown/jquery.countdown.min.js"></script>
+  <script src="js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="js/vendor/ez-plus/jquery.ez-plus.min.js"></script>
+  <script src="js/vendor/tocca/tocca.min.js"></script>
+  <script src="js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.min.js"></script>
+  <script src="js/vendor/isotope/jquery.isotope.min.js"></script>
+  <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="js/vendor/cookie/jquery.cookie.min.js"></script>
+  <script src="js/vendor/bootstrap-select/bootstrap-select.min.js"></script>
+  <script src="js/vendor/lazysizes/lazysizes.min.js"></script>
+  <script src="js/vendor/lazysizes/ls.bgset.min.js"></script>
+  <script src="js/vendor/form/jquery.form.min.js"></script>
+  <script src="js/vendor/form/validator.min.js"></script>
+  <script src="js/vendor/slider/slider.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
