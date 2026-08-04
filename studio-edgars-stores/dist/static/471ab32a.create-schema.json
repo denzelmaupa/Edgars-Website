@@ -1,0 +1,137 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Product Title"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "description": "e.g., KELSO, FAIHTWEAR, Kigili, Charter Club",
+        "name": "brand",
+        "type": "string",
+        "title": "Brand / Tag"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Menswear",
+              "value": "Men"
+            },
+            {
+              "title": "Ladieswear",
+              "value": "Ladies"
+            },
+            {
+              "title": "Kidswear / Baby",
+              "value": "Kids"
+            },
+            {
+              "title": "Homewear / Bedding & Linen",
+              "value": "Home"
+            },
+            {
+              "title": "Intimate / Underwear",
+              "value": "Underwear"
+            },
+            {
+              "title": "Beauty & Fragrance",
+              "value": "Beauty"
+            }
+          ],
+          "layout": "dropdown"
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "Men",
+                  "Ladies",
+                  "Kids",
+                  "Home",
+                  "Underwear",
+                  "Beauty"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "image",
+        "type": "image",
+        "title": "Product Image"
+      }
+    ],
+    "name": "product",
+    "type": "document"
+  }
+]

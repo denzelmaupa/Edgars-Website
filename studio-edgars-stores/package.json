@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "cheerio": "^1.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sanity": "^3.42.0",
-    "styled-components": "^6.1.11"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sanity": "^5.30.0",
+    "styled-components": "^6.4.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
     "typescript": "^5.4.5"
   }
 }
